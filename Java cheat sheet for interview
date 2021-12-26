@@ -44,6 +44,7 @@ sb.length();                  // return the number of characters in sb, similar 
 int[] arr = new int[10];
 Arrays.sort(arr);
 Arrays.fill(arr, -1);           // initialize all array elements with value -1
+Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0])); //sort 2d array by the first column
 public void helper(int[] nums);
 helper(new int[]{1, 2});        // initialize array in method
 
@@ -83,7 +84,9 @@ setA.retainAll(setB); // setA keeps the intersection of original setA and setB;
 setB.removeAll(setC); // Removes from this set all of its elements that are contained in the specified collection (setB - setC)
 setC.addAll(setD);    // union two sets of setC and setD
 setC.containsAll(setD); // Returns true if this set contains all of the elements of specified collection
-Object[] arr = setA.toArray(); // Returns an array containing all of the elements in this set.
+Object[] arr = setA.to
+
+(); // Returns an array containing all of the elements in this set.
 
 TreeMap<Integer, String> map = new TreeMap<>();             // key’s ascending order (default)
 map.put(2, “b”);
